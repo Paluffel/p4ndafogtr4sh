@@ -42,10 +42,10 @@ export default class HelloWorld {
                 transform: {
                 },
                 text: {
-                    contents: "magenta ",
+                    contents: "",
                     anchor: TextAnchorLocation.MiddleCenter,
                     color: { r: 213 / 255, g: 0 / 255, b: 213 / 255 },
-                    height: 2
+                    height: 0
                 }
             }
         });
