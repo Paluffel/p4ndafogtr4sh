@@ -70,9 +70,9 @@ export default class HelloWorld {
                   //@ts-ignore
                 buttonBehavior.onClick((user: User) => {        const libraryActors: Array<MRE.ForwardPromise<MRE.Actor>> = [];
                     libraryActors.push(MRE.Actor.CreateFromLibrary(this.context, {
-                        resourceId: "artifact: 1265485052519646203",
+                        resourceId: "artifact: 1265485061176689661",
                         actor: {
-                            name: 'Pandafog 01',
+                            name: 'Pandafog 02',
                             transform: {
                             
                             }
