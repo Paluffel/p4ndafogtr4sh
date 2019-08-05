@@ -45,7 +45,7 @@ export default class HelloWorld {
                     contents: "magenta ",
                     anchor: TextAnchorLocation.MiddleCenter,
                     color: { r: 213 / 255, g: 0 / 255, b: 213 / 255 },
-                    height: 0.3
+                    height: 2
                 }
             }
         });
