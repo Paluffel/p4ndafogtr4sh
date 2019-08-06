@@ -79,11 +79,6 @@ export default class HelloWorld {
                         }
                     }));
                 });
-    }
-}
-        )
-}
-}
         // AltspaceVR resource IDs from https://account.altvr.com/kits/
         const libraryActors: Array<MRE.ForwardPromise<MRE.Actor>> = [];
         libraryActors.push(MRE.Actor.CreateFromLibrary(this.context, {
@@ -113,11 +108,6 @@ export default class HelloWorld {
                         }
                     }));
                 });
-    }
-}
-        )
-}
-}
 
         // AltspaceVR resource IDs from https://account.altvr.com/kits/
         const libraryActors: Array<MRE.ForwardPromise<MRE.Actor>> = [];
@@ -152,4 +142,8 @@ export default class HelloWorld {
 }
         )
 }
+})
+            }
+        })
+    }
 }
