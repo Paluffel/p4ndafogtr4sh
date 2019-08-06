@@ -86,6 +86,7 @@ export default class HelloWorld {
             actor: {
                 name: 'Cube',
                 transform: {
+                             local: { position: { x: 0, y: 1, z: 0 } }
                 }
             }
         }));
@@ -103,7 +104,6 @@ export default class HelloWorld {
                         actor: {
                             name: 'Pandafog 02',
                             transform: {
-                             local: { position: { x: 0, y: 1, z: 0 } }
                             }
                         }
                     }));
@@ -116,6 +116,7 @@ export default class HelloWorld {
             actor: {
                 name: 'Cube',
                 transform: {
+                local: { position: { x: 0, y: -5, z: 0 } }
                 }
             }
         }));
@@ -133,7 +134,6 @@ export default class HelloWorld {
                         actor: {
                             name: 'Pandafog 01',
                             transform: {
-                             local: { position: { x: 0, y: -5, z: 0 } }
                             }
                         }
                     }));
