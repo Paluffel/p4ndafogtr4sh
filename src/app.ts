@@ -84,3 +84,72 @@ export default class HelloWorld {
         )
 }
 }
+        // AltspaceVR resource IDs from https://account.altvr.com/kits/
+        const libraryActors: Array<MRE.ForwardPromise<MRE.Actor>> = [];
+        libraryActors.push(MRE.Actor.CreateFromLibrary(this.context, {
+            resourceId: "artifact: 989569229617365197",
+            actor: {
+                name: 'Cube',
+                transform: {
+                }
+            }
+        }));
+        // Set up cursor interaction. We add the input behavior ButtonBehavior to the cube.
+        // Button behaviors have two pairs of events: hover start/stop, and click start/stop.
+        libraryActors.forEach((actor: MRE.ForwardPromise<MRE.Actor>) => {
+            if (actor) {
+                const buttonBehavior = actor.value.setBehavior(MRE.ButtonBehavior);
+
+                // Trigger the grow/shrink animations on hover.
+                  //@ts-ignore
+                buttonBehavior.onClick((user: User) => {        const libraryActors: Array<MRE.ForwardPromise<MRE.Actor>> = [];
+                    libraryActors.push(MRE.Actor.CreateFromLibrary(this.context, {
+                        resourceId: "artifact: 1265485061176689661",
+                        actor: {
+                            name: 'Pandafog 02',
+                            transform: {
+                             local: { position: { x: 0, y: 1, z: 0 } }
+                            }
+                        }
+                    }));
+                });
+    }
+}
+        )
+}
+}
+
+        // AltspaceVR resource IDs from https://account.altvr.com/kits/
+        const libraryActors: Array<MRE.ForwardPromise<MRE.Actor>> = [];
+        libraryActors.push(MRE.Actor.CreateFromLibrary(this.context, {
+            resourceId: "artifact: 989569229617365197",
+            actor: {
+                name: 'Cube',
+                transform: {
+                }
+            }
+        }));
+        // Set up cursor interaction. We add the input behavior ButtonBehavior to the cube.
+        // Button behaviors have two pairs of events: hover start/stop, and click start/stop.
+        libraryActors.forEach((actor: MRE.ForwardPromise<MRE.Actor>) => {
+            if (actor) {
+                const buttonBehavior = actor.value.setBehavior(MRE.ButtonBehavior);
+
+                // Trigger the grow/shrink animations on hover.
+                  //@ts-ignore
+                buttonBehavior.onClick((user: User) => {        const libraryActors: Array<MRE.ForwardPromise<MRE.Actor>> = [];
+                    libraryActors.push(MRE.Actor.CreateFromLibrary(this.context, {
+                        resourceId: "artifact: 1265485052519646203",
+                        actor: {
+                            name: 'Pandafog 01',
+                            transform: {
+                             local: { position: { x: 0, y: -1, z: 0 } }
+                            }
+                        }
+                    }));
+                });
+    }
+}
+        )
+}
+}
