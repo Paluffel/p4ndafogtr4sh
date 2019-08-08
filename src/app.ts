@@ -18,7 +18,6 @@ import {
     User,
 } from '@microsoft/mixed-reality-extension-sdk';
 import * as MRE from '@microsoft/mixed-reality-extension-sdk';
-import * as MRESDK from '@microsoft/mixed-reality-extension-sdk';
 
 /**
  * The main class of this app. All the logic goes here.
@@ -51,7 +50,7 @@ export default class HelloWorld {
         });
 
         // AltspaceVR resource IDs from https://account.altvr.com/kits/
-        const libraryActors: Array<MRE.ForwardPromise<MRE.Actor>> = [];
+        const libraryActors: MRE.Actor[] = [];
         libraryActors.push(MRE.Actor.CreateFromLibrary(this.context, {
             resourceId: "artifact: 989569229617365197",
             actor: {
@@ -62,13 +61,13 @@ export default class HelloWorld {
         }));
         // Set up cursor interaction. We add the input behavior ButtonBehavior to the cube.
         // Button behaviors have two pairs of events: hover start/stop, and click start/stop.
-        libraryActors.forEach((actor: MRE.ForwardPromise<MRE.Actor>) => {
-            if (actor) {
-                const buttonBehavior = actor.value.setBehavior(MRE.ButtonBehavior);
+      libraryActors.forEach((actor: MRE.Actor) => {
+        if (actor) {
+            const buttonBehavior = actor.setBehavior(MRE.ButtonBehavior);
 
                 // Trigger the grow/shrink animations on hover.
                   //@ts-ignore
-                buttonBehavior.onClick((user: User) => {        const libraryActors: Array<MRE.ForwardPromise<MRE.Actor>> = [];
+                buttonBehavior.onClick((user: User) => {        const libraryActors: MRE.Actor[] = [];
                     libraryActors.push(MRE.Actor.CreateFromLibrary(this.context, {
                         resourceId: "artifact: 1265485056982385660",
                         actor: {
@@ -80,7 +79,7 @@ export default class HelloWorld {
                     }));
                 });
         // AltspaceVR resource IDs from https://account.altvr.com/kits/
-        const libraryActors: Array<MRE.ForwardPromise<MRE.Actor>> = [];
+        const libraryActors: MRE.Actor[] = [];
         libraryActors.push(MRE.Actor.CreateFromLibrary(this.context, {
             resourceId: "artifact: 989569229617365197",
             actor: {
@@ -92,13 +91,12 @@ export default class HelloWorld {
         }));
         // Set up cursor interaction. We add the input behavior ButtonBehavior to the cube.
         // Button behaviors have two pairs of events: hover start/stop, and click start/stop.
-        libraryActors.forEach((actor: MRE.ForwardPromise<MRE.Actor>) => {
-            if (actor) {
-                const buttonBehavior = actor.value.setBehavior(MRE.ButtonBehavior);
-
+   libraryActors.forEach((actor: MRE.Actor) => {
+        if (actor) {
+            const buttonBehavior = actor.setBehavior(MRE.ButtonBehavior);
                 // Trigger the grow/shrink animations on hover.
                   //@ts-ignore
-                buttonBehavior.onClick((user: User) => {        const libraryActors: Array<MRE.ForwardPromise<MRE.Actor>> = [];
+                buttonBehavior.onClick((user: User) => {        const libraryActors: MRE.Actor[] = [];
                     libraryActors.push(MRE.Actor.CreateFromLibrary(this.context, {
                         resourceId: "artifact: 1265485061176689661",
                         actor: {
@@ -110,7 +108,7 @@ export default class HelloWorld {
                 });
 
         // AltspaceVR resource IDs from https://account.altvr.com/kits/
-        const libraryActors: Array<MRE.ForwardPromise<MRE.Actor>> = [];
+        const libraryActors: MRE.Actor[] = [];
         libraryActors.push(MRE.Actor.CreateFromLibrary(this.context, {
             resourceId: "artifact: 989569229617365197",
             actor: {
@@ -122,13 +120,13 @@ export default class HelloWorld {
         }));
         // Set up cursor interaction. We add the input behavior ButtonBehavior to the cube.
         // Button behaviors have two pairs of events: hover start/stop, and click start/stop.
-        libraryActors.forEach((actor: MRE.ForwardPromise<MRE.Actor>) => {
-            if (actor) {
-                const buttonBehavior = actor.value.setBehavior(MRE.ButtonBehavior);
+        libraryActors.forEach((actor: MRE.Actor) => {
+        if (actor) {
+            const buttonBehavior = actor.setBehavior(MRE.ButtonBehavior);
 
                 // Trigger the grow/shrink animations on hover.
                   //@ts-ignore
-                buttonBehavior.onClick((user: User) => {        const libraryActors: Array<MRE.ForwardPromise<MRE.Actor>> = [];
+                buttonBehavior.onClick((user: User) => {        const libraryActors: MRE.Actor[] = [];
                     libraryActors.push(MRE.Actor.CreateFromLibrary(this.context, {
                         resourceId: "artifact: 1265485052519646203",
                         actor: {
